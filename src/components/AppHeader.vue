@@ -39,7 +39,7 @@ export default {
             <a href="#">home</a>
           </li>
           <li>
-            <a href="#">services</a>
+            <a href="#services">services</a>
           </li>
           <li>
             <a href="#">skills</a>
