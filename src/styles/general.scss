@@ -1,9 +1,11 @@
 @use "../styles/partials/variables" as *;
 @import "bootstrap/scss/bootstrap.scss";
 @import "node_modules/@fortawesome/fontawesome-free/css/all.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;800;900&display=swap');
 
 body {
     background-color: black;
+    font-family: 'Montserrat', sans-serif;
 }
 
 ul {
@@ -13,6 +15,9 @@ ul {
 a {
     text-decoration: none;
     color: inherit;
+    &:hover {
+        color: $primary-color;
+    }
 }
 
 .ms-container {
@@ -24,4 +29,8 @@ a {
     background-color: $primary-color;
     color: white;
     text-transform: uppercase;
+    &:hover {
+        background-color: $secondary-color;
+        color: $primary-color;
+    }
 }

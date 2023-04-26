@@ -34,7 +34,7 @@ export default {
         class="main-navbar d-flex justify-content-between align-items-center text-uppercase pt-4"
       >
         <AppLogo />
-        <ul class="d-flex">
+        <ul class="d-flex align-items-center">
           <li>
             <a href="#">home</a>
           </li>
@@ -109,6 +109,7 @@ header {
     position: relative;
     height: calc(100vh - $contact-navbar-height);
     background-image: url(../assets/img/jumbo.jpg);
+    background-size: cover;
 
     .jumbo-overlay {
       position: absolute;
@@ -121,7 +122,20 @@ header {
         width: 30%;
         padding: 2rem;
         h1 {
+          position: relative;
           font-size: 4rem;
+          &::before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            top: 38px;
+            left: 4px;
+            z-index: -1;
+            width: 305px;
+            height: 30px;
+            border-radius: 5px;
+            background-color: rgba($color: $primary-color, $alpha: 0.5);
+          }
         }
         p {
           margin: 2rem 0;
