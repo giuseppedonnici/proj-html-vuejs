@@ -16,7 +16,7 @@ p {
 }
 span {
   display: inline-block;
-  background-color: rgba($color: $primary-color, $alpha: 0.7);
+  background-color: rgba($color: $primary-color, $alpha: 0.2);
   color: $primary-color;
   line-height: 50px;
   width: 100px;
