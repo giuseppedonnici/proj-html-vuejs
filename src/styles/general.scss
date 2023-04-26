@@ -1,0 +1,15 @@
+@import "bootstrap/scss/bootstrap.scss";
+@import "node_modules/@fortawesome/fontawesome-free/css/all.css";
+
+body {
+    background-color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.ms-container {
+    width: 70%;
+    margin: 0 auto;
+}
