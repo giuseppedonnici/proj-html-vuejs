@@ -52,7 +52,6 @@ export default {
   padding: unset;
   .company-skills {
     .special-span {
-      padding: 0.2rem;
       background-color: rgba($color: $primary-color, $alpha: 0.3);
     }
     width: 50%;

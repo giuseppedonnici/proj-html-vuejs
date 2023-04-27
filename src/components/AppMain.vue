@@ -1,6 +1,7 @@
 <script>
 import ServicesSection from './ServicesSection.vue';
 import SkillsSection from './SkillsSection.vue';
+import NewsSections from './NewsSection.vue';
 import { getImagePath } from "../utils";
 
 
@@ -8,7 +9,8 @@ export default {
     name: "AppMain",
     components: {
         ServicesSection,
-        SkillsSection
+        SkillsSection,
+        NewsSections
 
     },
     data() {
@@ -25,6 +27,7 @@ export default {
 <template>
     <ServicesSection />
     <SkillsSection />
+
     <section id="partners">
         <div class="ms-container">
             <ul class="d-flex justify-content-around">
@@ -34,6 +37,8 @@ export default {
             </ul>
         </div>
     </section>
+
+    <NewsSections />
 </template>
 
 <style scoped lang="scss">
