@@ -1,8 +1,14 @@
 <script>
+import ServiceCard from "./ServiceCard.vue";
+import { getImagePath } from "../utils";
+
 export default {
     name: "ServiceSection",
     components: {
-
+        ServiceCard
+    },
+    methods: {
+        getImagePath
     }
 }
 </script>
@@ -11,7 +17,7 @@ export default {
 <section id="services">
     <div class="ms-container">
         <div class="container-fluid">
-            <div class="row row-cols-lg-3 gx-5">
+            <div class="row row-cols-lg-3 gx-3">
                 <div class="col">
                     <h6 class="text-uppercase fw-bold">our business areas</h6>
                     <h2>Logistics Services</h2>
@@ -22,14 +28,18 @@ export default {
                     <button class="primary-btn btn d-block">read more</button>
                 </div>
                 <div class="col">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, amet sint. Repellendus quae alias minus vero officia, commodi sit. Maxime neque quia, deserunt omnis blanditiis laboriosam officia sequi ipsum totam!
-                    Reiciendis, odio corrupti sunt error mollitia distinctio corporis? Soluta aliquid consectetur incidunt iusto. Pariatur ipsum a nobis suscipit ut unde consequatur placeat eum, inventore laborum fugit officia eveniet, rem qui.
-                    Delectus, accusantium pariatur nulla maxime aperiam cupiditate tempore, neque repellendus voluptates alias officia impedit, deleniti corrupti commodi ipsa temporibus laboriosam doloremque hic tempora. Nihil enim illum debitis voluptates atque molestiae!
+                    <ServiceCard 
+                    :image="getImagePath('gallery-3.jpg')"
+                    title="Tecnology"
+                    description="Focused on developing technology solutions adapted to our client's needs"
+                    />
                 </div>
                 <div class="col">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, amet sint. Repellendus quae alias minus vero officia, commodi sit. Maxime neque quia, deserunt omnis blanditiis laboriosam officia sequi ipsum totam!
-                    Reiciendis, odio corrupti sunt error mollitia distinctio corporis? Soluta aliquid consectetur incidunt iusto. Pariatur ipsum a nobis suscipit ut unde consequatur placeat eum, inventore laborum fugit officia eveniet, rem qui.
-                    Delectus, accusantium pariatur nulla maxime aperiam cupiditate tempore, neque repellendus voluptates alias officia impedit, deleniti corrupti commodi ipsa temporibus laboriosam doloremque hic tempora. Nihil enim illum debitis voluptates atque molestiae!
+                    <ServiceCard 
+                    :image="getImagePath('gallery-5.jpg')"
+                    title="Transport"
+                    description="We develop operational strategies to improve logistical efficienty."
+                    />
                 </div>
             </div>
         </div>
