@@ -1,10 +1,12 @@
 <script>
 import ServicesSection from './ServicesSection.vue';
+import SkillsSection from './SkillsSection.vue';
 
 export default {
     name: "AppMain",
     components: {
-        ServicesSection
+        ServicesSection,
+        SkillsSection
 
     }
 }
@@ -12,7 +14,7 @@ export default {
 
 <template>
     <ServicesSection />
-
+    <SkillsSection />
 </template>
 
 <style scoped lang="scss">

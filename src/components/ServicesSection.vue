@@ -19,7 +19,7 @@ export default {
         <div class="container-fluid">
             <div class="row row-cols-lg-3 gx-3">
                 <div class="col">
-                    <h6 class="text-uppercase fw-bold">our business areas</h6>
+                    <h6>our business areas</h6>
                     <h2>Logistics Services</h2>
                     <p class="w-75">We are leaders in providing logistics services with a set of cutting edge technologies and a team of experienced and renowned professionals.</p>
                     <span class="badge p-2 me-3 mb-3">Tradition</span>
@@ -54,17 +54,8 @@ export default {
     #services {
         background-color: $section-bg-color;
         .col {
-            // debug
-            border: 1px solid red;
-            h6 {
-                color: $primary-color;
-                font-size: .8rem;
-            }
             h2 {
                 width: 60%;
-                font-weight: 700;
-                font-size: 3rem;
-                margin: 1.5rem 0;
             }
             span {
                 color: $primary-color;
@@ -72,7 +63,5 @@ export default {
                 font-weight: 300;
             }
         }
-        
     }
-
 </style>
