@@ -1,12 +1,21 @@
 <script>
 import NewsCard from './NewsCard.vue';
+import {store} from '../store';
+import { getImagePath } from '../utils';
 
 export default {
   name: "NewsSections",
   components: {
     NewsCard
+  },
+  data() {
+    return {
+      store
+    }
+  },
+  methods: {
+    getImagePath
   }
-
 }
 </script>
 
@@ -26,17 +35,20 @@ export default {
       <div class="row row-cols-lg-3 gx-3">
           <div class="col">
             <NewsCard 
-            title="Increasing creativity is possible for everyone"
+            :title="store.news[0].title"
+            :image="getImagePath(store.news[0].img)"
             />
           </div>
           <div class="col">
             <NewsCard 
-            title="Because market research is part of the business plan"
+            :title="store.news[1].title"
+            :image="getImagePath(store.news[1].img)"
             />
           </div>
           <div class="col">
             <NewsCard 
-            title="Working from home is now a trend"
+            :title="store.news[2].title"
+            :image="getImagePath(store.news[2].img)"
             />
           </div>
       </div>
@@ -58,9 +70,7 @@ export default {
         right: 0;
     }
 }
-
 .col {
     aspect-ratio: 1 / 1;
 }
-
 </style>
