@@ -21,6 +21,7 @@ export default {
   position: relative;
   height: 100%;
   border: unset;
+  cursor: pointer;
   h5 {
     position: absolute;
     bottom: 0;

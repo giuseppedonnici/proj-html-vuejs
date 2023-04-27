@@ -2,6 +2,7 @@
 import ServicesSection from './ServicesSection.vue';
 import SkillsSection from './SkillsSection.vue';
 import NewsSections from './NewsSection.vue';
+import NewsletterSection from './NewsletterSection.vue';
 import { getImagePath } from "../utils";
 
 
@@ -10,7 +11,8 @@ export default {
     components: {
         ServicesSection,
         SkillsSection,
-        NewsSections
+        NewsSections,
+        NewsletterSection
 
     },
     data() {
@@ -39,6 +41,7 @@ export default {
     </section>
 
     <NewsSections />
+    <NewsletterSection />
 </template>
 
 <style scoped lang="scss">

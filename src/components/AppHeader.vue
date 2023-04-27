@@ -48,7 +48,7 @@ export default {
             <a href="#partners">partners</a>
           </li>
           <li>
-            <a href="#">blog</a>
+            <a href="#blog">blog</a>
           </li>
           <li>
             <button class="primary-btn btn">get in touch</button>
