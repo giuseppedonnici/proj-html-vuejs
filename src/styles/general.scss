@@ -34,6 +34,16 @@ a {
   }
 }
 
+.secondary-btn {
+  color: white;
+  text-transform: uppercase;
+  border-color: $primary-color;
+  &:hover {
+    background-color: $secondary-color;
+    color: $primary-color;
+  }
+}
+
 section {
   padding: 5rem 0;
   h6 {
@@ -52,5 +62,10 @@ section {
   }
   .special-span {
     padding: 0.2rem;
+  }
+  .form-control:focus,
+  .form-select:focus {
+    border-color: $primary-color;
+    box-shadow: 0 0 0 0.25rem rgba($color: $primary-color, $alpha: 0.2);
   }
 }

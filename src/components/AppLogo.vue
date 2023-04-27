@@ -13,6 +13,7 @@ export default {
 p {
   font-weight: bold;
   letter-spacing: 5px;
+  cursor: pointer;
 }
 span {
   display: inline-block;

@@ -3,6 +3,7 @@ import ServicesSection from './ServicesSection.vue';
 import SkillsSection from './SkillsSection.vue';
 import NewsSections from './NewsSection.vue';
 import NewsletterSection from './NewsletterSection.vue';
+import GetintouchSection from './GetintouchSection.vue';
 import { getImagePath } from "../utils";
 
 
@@ -12,8 +13,8 @@ export default {
         ServicesSection,
         SkillsSection,
         NewsSections,
-        NewsletterSection
-
+        NewsletterSection,
+        GetintouchSection
     },
     data() {
         return {
@@ -42,6 +43,7 @@ export default {
 
     <NewsSections />
     <NewsletterSection />
+    <GetintouchSection />
 </template>
 
 <style scoped lang="scss">

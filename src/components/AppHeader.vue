@@ -51,7 +51,7 @@ export default {
             <a href="#blog">blog</a>
           </li>
           <li>
-            <button class="primary-btn btn">get in touch</button>
+            <a href="#getintouch" class="primary-btn btn">get in touch</a>
           </li>
         </ul>
       </div>
@@ -70,8 +70,8 @@ export default {
               For 20 years working with the most innovative in the field of
               transport.
             </p>
-            <button class="primary-btn btn">get in touch</button>
-            <button class="no-bg-btn btn text-uppercase">read more</button>
+            <a href="#getintouch" class="primary-btn btn">get in touch</a>
+            <button class="secondary-btn btn ms-3">read more</button>
           </div>
         </div>
       </div>
@@ -139,11 +139,6 @@ header {
         }
         p {
           margin: 2rem 0;
-        }
-        .no-bg-btn {
-          border-color: $primary-color;
-          color: white;
-          margin-left: 1rem;
         }
       }
     }
