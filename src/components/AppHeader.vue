@@ -5,6 +5,19 @@ export default {
   components: {
     AppLogo,
   },
+  data() {
+    return {
+      scrollPosition: null,
+    };
+  },
+  mounted() {
+    window.addEventListener('scroll', this.updateScroll)
+  },
+  methods: {
+    updateScroll() {
+      this.scrollPosition = window.scrollY;
+    },
+  },
 };
 </script>
 
@@ -31,7 +44,8 @@ export default {
     <!-- MAIN NAVBAR -->
     <div class="ms-container">
       <div
-        class="main-navbar d-flex justify-content-between align-items-center text-uppercase pt-4"
+        class="main-navbar d-flex justify-content-between align-items-center text-uppercase"
+        :class="{change_color: scrollPosition > 50}, {'pt-3': scrollPosition < 50}"
       >
         <AppLogo />
         <ul class="d-flex align-items-center">
@@ -98,12 +112,18 @@ header {
     height: $contact-navbar-height;
     background-color: $contact-navbar-color;
   }
+  .change_color {
+    background-color: $contact-navbar-color;
+    top: 0;
+    padding-top: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+   }
   .main-navbar {
     width: 70%;
     margin: 0 auto;
     position: fixed;
     z-index: 999;
-    top: 40px;
   }
   .jumbotron {
     position: relative;
