@@ -128,7 +128,6 @@ export default {
   .cta-right {
     width: 40%;
     ul {
-        padding: unset;
         margin-top: 2rem;
         li {
             display: flex;
