@@ -107,7 +107,7 @@ header {
   }
   .jumbotron {
     position: relative;
-    z-index: -4;
+    z-index: 0;
     height: calc(100vh - $contact-navbar-height);
     background-image: url(../assets/img/jumbo.jpg);
     background-size: cover;
@@ -116,7 +116,7 @@ header {
       position: absolute;
       top: 0;
       left: 0;
-      z-index: -5;
+      z-index: -2;
       height: 100%;
       width: 100%;
       background-color: rgba($color: #000000, $alpha: 0.5);
