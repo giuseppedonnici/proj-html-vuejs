@@ -5,6 +5,7 @@ import NewsSections from './NewsSection.vue';
 import NewsletterSection from './NewsletterSection.vue';
 import GetintouchSection from './GetintouchSection.vue';
 import { getImagePath } from "../utils";
+import { store } from "../store";
 
 
 export default {
@@ -18,7 +19,7 @@ export default {
     },
     data() {
         return {
-            partnersArray: ['logo-5.png', 'logo-1.png', 'logo-2.png', 'logo-3.png', 'logo-4.png', 'logo-5.png']
+            store
         }
     },
     methods: {
@@ -34,7 +35,7 @@ export default {
     <section id="partners">
         <div class="ms-container">
             <ul class="d-flex justify-content-around">
-                <li v-for="(partner, index) in partnersArray" :key="index">
+                <li v-for="(partner, index) in store.partnersArray" :key="index">
                     <img :src="getImagePath(partner)" :alt="partner">
                 </li>
             </ul>
