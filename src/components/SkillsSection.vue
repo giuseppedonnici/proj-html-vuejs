@@ -36,6 +36,7 @@ export default {
         </ul>
       </div>
     </div>
+    <div class="dots-pattern mt-5"></div>
   </section>
 </template>
 
@@ -43,6 +44,7 @@ export default {
 @use "../styles/partials/variables" as *;
 
 #skills {
+  position: relative;
   background-color: black;
   background-image: url(../assets/img/about-5.jpg);
   background-size: 50%;

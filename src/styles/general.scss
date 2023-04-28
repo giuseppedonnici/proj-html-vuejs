@@ -69,4 +69,20 @@ section {
     border-color: $primary-color;
     box-shadow: 0 0 0 0.25rem rgba($color: $primary-color, $alpha: 0.2);
   }
+  .dots-pattern {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, +50%);
+    z-index: 1;
+    width: 150px;
+    height: 60px;
+    background-image: radial-gradient(
+      circle at center,
+      $primary-color 0.25rem,
+      transparent 0
+    );
+    background-size: 1rem 1rem;
+    background-repeat: round;
+  }
 }
