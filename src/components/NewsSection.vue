@@ -22,7 +22,7 @@ export default {
 <template>
   <section id="blog">
     <div class="ms-container">
-
+      <!-- TOP -->
       <div class="news-description mb-5">
         <h6>our editorial content</h6>
         <h2>Latest <span class="special-span">News</span></h2>
@@ -31,27 +31,22 @@ export default {
         </p>
         <button class="btn primary-btn">see all</button>
       </div>
+      <!-- /TOP -->
 
+      <!-- DOWN -->
       <div class="row row-cols-lg-3 gx-3">
-          <div class="col">
+          <div class="col" 
+            v-for="(singleNews, index) in store.news" 
+            :key="index"
+            v-show="index < 3"
+            >
             <NewsCard 
-            :title="store.news[0].title"
-            :image="getImagePath(store.news[0].img)"
-            />
-          </div>
-          <div class="col">
-            <NewsCard 
-            :title="store.news[1].title"
-            :image="getImagePath(store.news[1].img)"
-            />
-          </div>
-          <div class="col">
-            <NewsCard 
-            :title="store.news[2].title"
-            :image="getImagePath(store.news[2].img)"
+            :title="singleNews.title"
+            :image="getImagePath(singleNews.img)"
             />
           </div>
       </div>
+      <!-- /DOWN -->
     </div>
   </section>
 </template>

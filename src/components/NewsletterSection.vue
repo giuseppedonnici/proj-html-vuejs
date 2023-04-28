@@ -7,6 +7,7 @@ export default {
 <template>
   <section id="newsletter">
     <div class="ms-container d-flex">
+      <!-- LEFT -->
       <div class="newsletter-description p-5">
         <h6>newsletter</h6>
         <h2><span class="special-span">Know</span> First</h2>
@@ -15,7 +16,9 @@ export default {
           the current market
         </p>
       </div>
+      <!-- /LEFT -->
 
+      <!-- RIGHT -->
       <form class="p-5">
         <div class="row mb-3">
           <div class="col-lg-10">
@@ -39,6 +42,7 @@ export default {
         </div>
         <button type="submit" class="btn primary-btn">subscribe</button>
       </form>
+      <!-- /RIGHT -->
     </div>
   </section>
 </template>

@@ -1,6 +1,19 @@
 import { reactive } from "vue";
 
 export const store = reactive({
+    servicesCards: [
+        {
+            title: 'Tecnology',
+            description: "Focused on developing technology solutions adapted to our client's needs",
+            img: 'gallery-3.jpg'
+        },
+        {
+            title: 'Transport',
+            description: "We develop operational strategies to improve logistical efficienty.",
+            img: 'gallery-5.jpg'
+        }
+    ],
+    badgesService: ['Tradition', 'Quality', 'Security'],
     partnersArray: ['logo-5.png', 'logo-1.png', 'logo-2.png', 'logo-3.png', 'logo-4.png', 'logo-5.png'],
     news: [
         {
@@ -17,12 +30,12 @@ export const store = reactive({
         },
         {
             img: 'news-4.jpg',
-            title: ''
+            title: 'prova'
         },
         {
             img: 'news-5.jpg',
-            title: ''
-        }
+            title: 'prova'
+        },
     ],
     footerCards: [
         {
