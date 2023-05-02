@@ -13,7 +13,7 @@ export default {
       <li class="mb-3">
         <h5 class="text-white">{{ cardInfo.title }}</h5>
       </li>
-      <li class="mb-2" v-for="listItem in cardInfo.items[0]">
+      <li class="mb-2" v-for="listItem in cardInfo.items">
         <a href="#">
           <i class="fa-solid fa-chevron-right"></i>
           <span>{{ listItem }}</span>

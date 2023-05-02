@@ -41,44 +41,17 @@ export const store = reactive({
         {
             title: 'About',
             id: 1,
-            items: [
-                {
-                    item1: 'The Company',
-                    item2: 'Institutional',
-                    item3: 'Social & Events',
-                    item4: 'Innovation',
-                    item5: 'Environment',
-                    item6: 'Technology'
-                }
-            ]
+            items: ['The Company', 'Institutional', 'Social & Events', 'Innovation', 'Environment', 'Technology']
         },
         {
             title: 'Transport',
             id: 2,
-            items: [
-                {
-                    item1: 'Industrialized',
-                    item2: 'Chemicals',
-                    item3: 'Packaged Liquids',
-                    item4: 'Construction',
-                    item5: 'Laminated Wood',
-                    item6: 'And others'
-                }
-            ]
+            items: ['Industrialized', 'Chemicals', 'Packaged Liquids', 'Construction', 'Laminated Wood', 'And others']
         },
         {
             title: 'Support',
             id: 3,
-            items: [
-                {
-                    item1: 'Responsability',
-                    item2: 'Terms of Use',
-                    item3: 'About Cookies',
-                    item4: 'Privacy Policy',
-                    item5: 'Accessibility',
-                    item6: 'Information'
-                }
-            ]
+            items: ['Responsability', 'Terms of Use', 'About Cookies', 'Privacy Policy', 'Accessibility', 'Information']
         }
     ]
 });
